@@ -77,7 +77,10 @@ input::placeholder {
 }
 
 #todo-list li {
+    display: flex;
     margin: 5px 1px;
+    white-space: nowrap;
+    align-items: center;
 }
 
 #todo-list li span {
@@ -85,10 +88,14 @@ input::placeholder {
     font-size: 20px;
 }
 
+.complete {
+    text-decoration: line-through;
+}
+
 button {
     background-color: transparent;
     border: 2px solid #FFFFFF;
-    padding: 1px 3px; 
+    padding: 1px 3px;
     cursor: pointer;
     border-radius: 5px;
 }
