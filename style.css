@@ -21,19 +21,18 @@ img {
 
 #clock {
     position: absolute;
-    top: 30%;
+    top: 27%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 168px;
+    font-size: 160px;
 }
 
 #login-form,
 #greeting {
     position: absolute;
-    top: 50%;
+    top: 48%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 54px;
     white-space: nowrap;
 }
 
@@ -59,10 +58,23 @@ input::placeholder {
 
 #login-form input {
     font-size: 54px;
+    margin: 0px 5px;
+}
+
+#login-form input:first-child {
+    width: 500px;
+}
+
+#login-form input:last-child {
+    width: 180px;
+}
+
+#greeting {
+    font-size: 54px;
 }
 
 #todo-form input {
-    width: 600px;
+    width: 500px;
     font-size: 36px;
 }
 
@@ -72,13 +84,13 @@ input::placeholder {
     left: 50%;
     list-style: none;
     transform: translateX(-50%);
-    max-height: 175px;
+    max-height: 149px;
     overflow-y: auto;
 }
 
 #todo-list li {
     display: flex;
-    margin: 5px 1px;
+    margin: 1px 1px;
     white-space: nowrap;
     align-items: center;
 }
@@ -112,4 +124,47 @@ button {
     position: absolute;
     right: 1%;
     top: 1%;
+}
+
+@media screen and (max-width: 768px) {
+    #clock {
+        font-size: 120px;
+    }
+    
+    #login-form input {
+        font-size: 42px;
+    }
+
+    #login-form input:first-child {
+        width: 400px;
+    }
+
+    #login-form input:last-child {
+        width: 140px;
+    }
+
+    #greeting {
+        font-size: 42px;
+    }
+
+    #todo-form input {
+        width: 400px;
+        font-size: 28px;
+    }
+
+    #todo-list {
+        max-height: 123px;
+    }
+
+    #todo-list li span {
+        font-size: 16px; 
+    }
+
+    #quote {
+        font-size: 12px;
+    }
+
+    #weather {
+        font-size: 12px;
+    }
 }
